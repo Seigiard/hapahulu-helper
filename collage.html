@@ -1,0 +1,33 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Коллаж</title>
+        <link rel="stylesheet" href="style.css?201709131123">
+    </head>
+    <body class='show-menu'>
+        <form id="form">
+            <p><b>Коллаж</b> <a href="index.html">Картограф</a></p>
+            <label>From:
+            <input class="autocomplete" placeholder="Enter your address" type="text"></input>
+            </label>
+            <label>To:
+            <input class="autocomplete" placeholder="Enter your address" type="text"></input>
+            </label>
+            <label>Image 1:
+            <input id="image1" class="image" placeholder="Enter image url" type="text"></input>
+            </label>
+            <label>Image 2:
+            <input id="image2" class="image" placeholder="Enter image url" type="text"></input>
+            </label>
+        </form>
+        <div class="collage">
+            <div class="collage-map"><div id="map"></div></div>
+            <div class="collage-image-1"><div id="collageImage1"></div></div>
+            <div class="collage-image-2"><div id="collageImage2"></div></div>
+        </div>
+
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=AIzaSyDa8nlgmVDtS2GkbthIVdkxKoXMEhMZiFU"></script>
+        <script src="common.js?201709131123"></script>
+        <script src="collage.js?201709131123"></script>
+    </body>
+</html>

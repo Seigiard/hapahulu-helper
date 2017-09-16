@@ -1,0 +1,76 @@
+html, body {
+    margin:0;
+    padding:0;
+    background:#fff;
+}
+#hideSidebar {
+    display: none;
+}
+#form {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:1000;
+    width: 300px;
+    padding:10px;
+    background:rgba(255,255,255,.9);
+    display: none;
+}
+.show-menu #form {
+    display: block;
+}
+#form label {
+    display: block;
+}
+#form input {
+    width: 100%;
+    font-size: 14px;
+    margin: 5px 0;
+    width: 100%;
+    box-sizing:border-box;
+    font-size:14px;
+}
+
+#map {
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.collage {
+    width: 150vh;
+    height: 100vh;
+    margin:0 auto;
+}
+
+.collage-map {
+    width: 100vh;
+    height: 100vh;
+    float: left;
+}
+
+.collage #map {
+    width: 100vh;
+    height: 100vh;
+}
+
+.collage-image-1, .collage-image-2 {
+    width: 50vh;
+    height: 50vh;
+    float: right;
+    box-sizing: border-box;
+}
+.collage-image-1 {
+    padding: 0 0 .5em 1em;
+}
+.collage-image-2 {
+    padding: .5em 0 0 1em;
+}
+
+#collageImage1, #collageImage2 {
+    width: calc(50vh - 1em);
+    height: calc(50vh - 0.5em);
+    background-position:center center!important;
+    background-size:cover!important;
+    background: #fff;
+}
