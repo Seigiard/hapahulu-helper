@@ -1,7 +1,16 @@
+:root {
+    --mapWidth: 100vw;
+    --mapHeight: calc(var(--mapWidth) * .5);
+
+    --mapCollageHeight: 100vh;
+    --mapCollageImageMeasure: calc(var(--mapCollageHeight) * .5);
+    --mapCollageWidth: calc(var(--mapCollageHeight) * 1.5);
+}
 html, body {
     margin:0;
     padding:0;
     background:#fff;
+    font-family: PT Serif;
 }
 #hideSidebar {
     display: none;
@@ -32,31 +41,30 @@ html, body {
 }
 
 #map {
-    width: 100vw;
-    height: 100vh;
+    width: var(--mapWidth);
+    height: var(--mapHeight);
 }
 
-
 .collage {
-    width: 150vh;
-    height: 100vh;
+    width: var(--mapCollageWidth);
+    height: var(--mapCollageHeight);
     margin:0 auto;
 }
 
 .collage-map {
-    width: 100vh;
-    height: 100vh;
+    width: var(--mapCollageHeight);
+    height: var(--mapCollageHeight);
     float: left;
 }
 
 .collage #map {
-    width: 100vh;
-    height: 100vh;
+    width: var(--mapCollageHeight);
+    height: var(--mapCollageHeight);
 }
 
 .collage-image-1, .collage-image-2 {
-    width: 50vh;
-    height: 50vh;
+    width: var(--mapCollageImageMeasure);
+    height: var(--mapCollageImageMeasure);
     float: right;
     box-sizing: border-box;
 }
@@ -68,8 +76,8 @@ html, body {
 }
 
 #collageImage1, #collageImage2 {
-    width: calc(50vh - 1em);
-    height: calc(50vh - 0.5em);
+    width: calc(var(--mapCollageImageMeasure) - 1em);
+    height: calc(var(--mapCollageImageMeasure) - 0.5em);
     background-position:center center!important;
     background-size:cover!important;
     background: #fff;
